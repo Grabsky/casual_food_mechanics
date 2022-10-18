@@ -1,0 +1,8 @@
+{
+    "name" : "casual_food_mechanics",
+    "friendlyName" : "Casual Food Mechanics",
+    "description" : "Disables food from rotting and makes it stackable up to 20.",
+    "version" : "0.9.0-pre",
+    "author" : "EclipticWulf, Grabsky",
+    "priority" : 999999
+}
