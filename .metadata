@@ -1,8 +1,8 @@
 {
-    "name" : "casual_food_mechanics",
-    "friendlyName" : "Casual Food Mechanics",
-    "description" : "Disables food from rotting and makes it stackable up to 20.",
-    "version" : "0.9.0-pre",
-    "author" : "EclipticWulf, Grabsky",
-    "priority" : 999999
+    "name" : "open_food_mechanics",
+    "friendlyName" : "Open Food Mechanics",
+    "includes": ["Improved Food Descriptions"],
+    "description" : "Prevents food from rotting and makes it (along with other consumables) stackable up to 20.",
+    "version" : "0.9.1-pre",
+    "author" : "Grabsky"
 }
