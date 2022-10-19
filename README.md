@@ -18,6 +18,7 @@ Download latest version [here](https://github.com/Grabsky/open_food_mechanics/re
 > No incompatibilities found, make sure to open an issue if you find one.  
 
 **Compatible**: NeoVanAlemania's [Improved Food Descriptions](https://community.playstarbound.com/resources/improved-food-descriptions.3743/)  
+**Compatible**: Niffe's [More Canned Food](https://steamcommunity.com/sharedfiles/filedetails/?id=2835491179)  
 
 <br>
 
