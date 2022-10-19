@@ -34,7 +34,14 @@ Patch files was generated automatically using a few (linux) commands:
 
     ```json
     [
-        { "op": "replace", "path": "/maxStack", "value": 20 }
+        [
+            { "op": "test", "path": "/maxStack" },
+            { "op": "replace", "path": "/maxStack", "value": 20 }
+        ],
+        [
+            { "op": "test", "path": "/maxStack", "inverse": true },
+            { "op": "add", "path": "/maxStack", "value": 20 }
+        ]
     ]
     ```
 
