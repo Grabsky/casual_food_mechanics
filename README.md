@@ -23,15 +23,15 @@ Download latest version [here](https://github.com/Grabsky/open_food_mechanics/re
 <br>
 
 ## Technical Details
-Patch files was generated automatically using a few (linux) commands:  
+Patch files were generated automatically using a few (linux) commands:  
 
-1. **Heading to game directory:**
+1. **Head to the game directory:**
 
     ```bash
     $ cd /path/to/Starbound/
     ```
 
-2. **Creating** `_template.consumable.patch` **file with contents:**
+2. **Create** `_template.consumable.patch` **file with following contents:**
 
     ```json
     [
@@ -46,36 +46,36 @@ Patch files was generated automatically using a few (linux) commands:
     ]
     ```
 
-3. **Unpacking Starbound assets:**
+3. **Unpack Starbound assets:**
 
     ```bash
     $ ./linux/asset_unpacker "./assets/packed.pak" "./_starbound_assets"
     ```
 
-4. **Creating** `_starbound_consumables` **directory:**
+4. **Create** `_starbound_consumables` **directory:**
     ```bash
     $ mkdir -p "./_starbound_consumables"
     ```
 
-5. **Copying** `.consumable` **files to** `starbound_consumables`**:**
+5. **Copy all** `*.consumable` **files to** `starbound_consumables` **directory:**
 
     ```bash
     $ find "./_starbound_assets" -name "*.consumable" -print -exec cp --parents "{}" "./_starbound_consumables" \;
     ```
 
-6. **Renaming** `*.consumable` **to** `.consumable.patch`**:**
+6. **Rename all** `*.consumable` **files to** `*.consumable.patch`**:**
 
     ```bash
     $ find "./_starbound_consumables" -name "*.consumable" -exec mv "{}" "{}.patch" \;
     ```
 
-7. **Overriding** `.consumable.patch` **files with contents of** `./_template.consumable.patch`**:**
+7. **Override all** `*.consumable.patch` **files with contents of** `./_template.consumable.patch` **file:**
 
     ```bash
     $ find "./_starbound_consumables" -name "*.consumable.patch" -exec cp "./_template.consumable.patch" "{}" \;
     ```
     
-8. (Optional) **Copying files to mod repository and cleaning up workspace:**
+8. (Optional) **Copy files to mod repository and clean up workspace:**
 
     ```bash
     $ cp -Ri "./_starbound_consumables/_starbound_assets/" "/path/to/open_food_mechanics/"
