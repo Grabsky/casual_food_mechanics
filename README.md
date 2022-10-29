@@ -19,6 +19,7 @@ Download latest version [here](https://github.com/Grabsky/open_food_mechanics/re
 
 **Compatible**: NeoVanAlemania's [Improved Food Descriptions](https://community.playstarbound.com/resources/improved-food-descriptions.3743/)  
 **Compatible**: Niffe's [More Canned Food](https://steamcommunity.com/sharedfiles/filedetails/?id=2835491179)  
+**Compatible**: Pixelflame's [Project Ancient Cosmos](https://steamcommunity.com/sharedfiles/filedetails/?id=2644341899)
 
 <br>
 
@@ -78,6 +79,6 @@ Patch files were generated automatically using a few (linux) commands:
 8. (Optional) **Copy files to mod repository and clean up workspace:**
 
     ```bash
-    $ cp -Ri "./_starbound_consumables/_starbound_assets/" "/path/to/open_food_mechanics/"
+    $ cp -Ri "./_starbound_consumables/_starbound_assets/items" "/path/to/open_food_mechanics/"
     $ rm -R "./_starbound_assets/" "./_starbound_consumables/" "./_template.consumable.patch"
     ```
